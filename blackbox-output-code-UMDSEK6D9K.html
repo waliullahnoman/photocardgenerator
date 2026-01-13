@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Photo Card Creator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2>Controls</h2>
+            <label for="template">Template:</label>
+            <select id="template">
+                <option value="jamuna">Jamuna-style</option>
+                <!-- Add more options here later -->
+            </select>
+            
+            <label for="headlineBangla">Headline (Bangla):</label>
+            <input type="text" id="headlineBangla" placeholder="Enter Bangla headline">
+            
+            <label for="headlineEnglish">Headline (English):</label>
+            <input type="text" id="headlineEnglish" placeholder="Enter English headline">
+            
+            <label for="subheading">Subheading:</label>
+            <input type="text" id="subheading" placeholder="Enter subheading">
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+            
+            <label for="domain">Domain / Website:</label>
+            <input type="text" id="domain" placeholder="e.g., example.com">
+            
+            <label for="mediaName">Media Name:</label>
+            <input type="text" id="mediaName" placeholder="e.g., Daily News">
+            
+            <label for="facebookUrl">Facebook URL:</label>
+            <input type="url" id="facebookUrl" placeholder="https://facebook.com/...">
+            
+            <label for="youtubeUrl">YouTube URL:</label>
+            <input type="url" id="youtubeUrl" placeholder="https://youtube.com/...">
+            
+            <label for="logoUpload">Logo Upload:</label>
+            <input type="file" id="logoUpload" accept="image/*">
+            
+            <label for="fontSelector">Font:</label>
+            <select id="fontSelector">
+                <option value="Noto Sans Bengali">Noto Sans Bengali</option>
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+            </select>
+            
+            <label for="textColor">Text Color:</label>
+            <input type="color" id="textColor" value="#000000">
+            
+            <label for="mainImageUpload">Main Image Upload:</label>
+            <input type="file" id="mainImageUpload" accept="image/*">
+        </div>
+        <div class="central-area">
+            <canvas id="previewCanvas" width="1080" height="1080"></canvas>
+            <button id="downloadBtn">Download PNG</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
